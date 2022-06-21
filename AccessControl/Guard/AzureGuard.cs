@@ -31,8 +31,8 @@ public class AzureGuard : IGuard
     public bool Allows(string id, byte[] image)
     {
         var requestContent = new StringContent(new AccessAttempt(id, image).ToJson(), Encoding.UTF8, "application/json");
-        var response = _client.PostAsync(_url, requestContent).Result;
-        var result = JsonSerializer.Deserialize<bool>(response.Content.ReadAsStream());
+        var response = _client.PatchAsync(_url, requestContent);
+        var result = JsonSerializer.Deserialize<bool>(response.Result.Content.ReadAsStream());
 
         return result;
     }

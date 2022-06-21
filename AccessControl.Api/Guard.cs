@@ -14,7 +14,7 @@ public static class Guard
 {
     [FunctionName("Guard")]
     public static async Task<IActionResult> RunAsync(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)]
+        [HttpTrigger(AuthorizationLevel.Function, "patch", Route = null)]
         HttpRequest req, ILogger log)
     {
         log.LogInformation("Function started");
