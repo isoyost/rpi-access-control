@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MongoDB" uuid="fe8f26ff-9095-4b46-8b4d-6e94a74f3f2a">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://entry-checker-db:AkaK51PDKI2f9M1RrvtingOLmOsnpjlWcSAYPtq5Hf2Yt40ppKhaHR7y3Ns7PKkJASz8mfC2cWd7hCzIACAICQ==@entry-checker-db.mongo.cosmos.azure.com:10255/?ssl=true&amp;replicaSet=globaldb&amp;retrywrites=false&amp;maxIdleTimeMS=120000&amp;appName=@entry-checker-db@</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>
